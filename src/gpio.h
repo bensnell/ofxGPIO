@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #ifndef GPIO_H
 #define GPIO_H
 
@@ -20,3 +22,4 @@ class GPIO {
 };
 #endif
 
+#endif

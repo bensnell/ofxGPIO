@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <stdint.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
@@ -58,3 +60,5 @@ class SPI2 {
 	  return fd ;
 	}
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <fstream>
 #include <string>
 #include <iostream>
@@ -105,3 +107,4 @@ return this->gpionum;
 
 }
 
+#endif

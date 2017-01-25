@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <unistd.h>
 #include <stdint.h>
 #include <string.h>
@@ -162,3 +164,5 @@ void setup(std::string devspi, unsigned char spiMode, unsigned int spiSpeed, uns
     this->xclose();
 }
 };
+
+#endif

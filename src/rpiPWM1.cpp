@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include "rpiPWM1.h"
 
 //Need to do this to be able to access these constants
@@ -429,3 +431,4 @@ void  rpiPWM1::configPWM1(){
 	*(pwm + PWM_CTL) |= ( (1 << 7) | (1 << 0) ); 
 }
   
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #ifndef RPIPWM1_H
     #define PRIPWM1_H
 #include <stdio.h>
@@ -174,4 +176,6 @@ private:
   //of our process memory 
   
 };
+#endif
+
 #endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #ifndef LIB_I2C_SMBUS_H
 #define LIB_I2C_SMBUS_H
 
@@ -35,3 +37,5 @@ extern __s32 i2c_smbus_block_process_call(int file, __u8 command, __u8 length,
                       __u8 *values);
 
 #endif /* LIB_I2C_SMBUS_H */
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include "ofMain.h"
 
 /*
@@ -204,3 +206,5 @@ class ReadRawData : public ofThread {
             stopThread();
         }
 };
+
+#endif

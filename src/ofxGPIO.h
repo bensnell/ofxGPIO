@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 //system
 #include <iostream>
 #include <sstream>
@@ -32,3 +34,5 @@
 	#include "GETGoogleImage.h"
 #endif
 #include "LED.h"
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <fcntl.h>
 #include "smbus.h"
 #include <linux/i2c.h>
@@ -123,3 +125,4 @@ uint16_t I2CBus::readBlock(uint8_t command, uint8_t size, uint8_t * data)
 	return result;
 }
 
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <sys/ioctl.h>
 #include <stdint.h>
 #include <linux/types.h>
@@ -46,3 +48,4 @@ class I2CBus {
 		int fd;
 };
 
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include "ofMain.h"
 
 class GETGoogleImage {
@@ -38,3 +40,5 @@ class GETGoogleImage {
                 }
 
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #include <errno.h>
 #include "smbus.h"
 #include <sys/ioctl.h>
@@ -198,3 +200,5 @@ __s32 i2c_smbus_block_process_call(int file, __u8 command, __u8 length,
         values[i-1] = data.block[i];
     return data.block[0];
 }
+
+#endif

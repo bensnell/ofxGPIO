@@ -1,3 +1,5 @@
+#ifdef __arm__
+
 #ifndef COMPILE_WITHOUT_OPENFRAMEWORKS
 	#include "ofMain.h"
 #endif
@@ -82,3 +84,5 @@ class LED {
 	}
 
 };
+
+#endif
